@@ -1,19 +1,22 @@
-// import { useState } from "react";
-import "./Header.css";
-import logo from "../assets/images/logo.png";
-import cart from "../assets/images/cart.png";
+// import React from "react";
+import "./Hero.css";
+import image1 from "../assets/images/image1.png";
+import menuPng from "../assets/images/menu.png";
+import cartPng from "../assets/images/cart.png";
+import logoPng from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const Hero = () => {
   return (
     <>
       <div className="header">
         <div className="container">
           <div className="navbar">
             <div className="logo">
-              <img src={logo} width={"120px"} />
+              <img src={logoPng} width="125px" />
             </div>
             <nav>
-              <ul>
+              <ul id="MenuItems">
                 <li>
                   <a href="">Home</a>
                 </li>
@@ -31,8 +34,13 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <img src={cart} />
-            <img src="images/menu.png" className="menu-icon" />
+            <img
+              src={cartPng}
+              width="30px"
+              height="30px"
+              className="cart-png"
+            />
+            <img src={menuPng} className="menu-icon" /*onClick={menutoggle}*/ />
           </div>
           <div className="row">
             <div className="col-2">
@@ -45,12 +53,12 @@ const Header = () => {
                 <br />
                 hard work gains success. Greatness will come.
               </p>
-              <a href="" className="btn">
+              <Link to="/login" className="btn">
                 Explore Now &#8594;
-              </a>
+              </Link>
             </div>
             <div className="col-2">
-              <img src="images/image1.png" />
+              <img src={image1} />
             </div>
           </div>
         </div>
@@ -59,4 +67,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;
