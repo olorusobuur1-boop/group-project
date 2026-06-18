@@ -3,7 +3,7 @@ import "./Hero.css";
 import image1 from "../assets/images/image1.png";
 
 import { Link } from "react-router-dom";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
