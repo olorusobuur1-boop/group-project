@@ -16,11 +16,10 @@ import product10 from "../assets/images/product-10.jpg";
 import product11 from "../assets/images/product-11.jpg";
 import product12 from "../assets/images/product-12.jpg";
 import exclusive from "../assets/images/exclusive.png";
-import Navbar from "./Navbar";
 import StarIcon from '@mui/icons-material/Star';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-import Footer from "./Footer";
+
 
 const Products = () => {
   return (
@@ -221,7 +220,7 @@ const Products = () => {
         </div>
       </div>
     </div>
-    <Footer/>
+
     </>
   );
 };
