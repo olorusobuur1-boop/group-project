@@ -4,6 +4,7 @@ import image1 from "../assets/images/image1.png";
 
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Hero = () => {
   return (
@@ -32,6 +33,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

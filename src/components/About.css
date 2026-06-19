@@ -1,0 +1,162 @@
+/* About Section Styling */
+.about-section {
+  padding: 80px 0;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 0.5s ease-in;
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.about-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+/* Text Side */
+.about-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  color: #111;
+}
+
+/* Red underline effect for the title */
+.about-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #ff523b; /* RedStore Red */
+  border-radius: 2px;
+}
+
+.about-text {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Stats Section */
+.about-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.stat-item h3 {
+  font-size: 28px;
+  color: #ff523b;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Visual Design Side (Right) */
+.about-visual {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-background {
+  width: 100%;
+  max-width: 400px;
+  background: linear-gradient(135deg, #111 0%, #222 100%);
+  padding: 40px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Red glowing circle in the background of the card */
+.circle-deco {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 82, 59, 0.2);
+  border-radius: 50px;
+  filter: blur(20px);
+}
+
+.visual-content {
+  position: relative;
+  z-index: 1;
+}
+
+.tag {
+  background-color: #ff523b;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.visual-content h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.visual-content p {
+  color: #ff523b;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-stats {
+    justify-content: center;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
